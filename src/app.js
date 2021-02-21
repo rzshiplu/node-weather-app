@@ -7,6 +7,9 @@ const weatherReport = require('./utils/weatherReport');
 
 const app = express();
 
+// set port
+const port = process.env.port || 3010;
+
 // set static Path
 const publicPath = path.join(__dirname, '../public');
 app.use( express.static(publicPath) );
@@ -64,6 +67,6 @@ app.get('/weather', (req, res) => {
     });
 });
 
-app.listen(3010, () => {
-    console.log('Server Running on port:3010');
+app.listen(port, () => {
+    console.log('Server Running on port:' + port);
 });

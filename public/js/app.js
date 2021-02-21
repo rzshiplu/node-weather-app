@@ -12,7 +12,7 @@ $(document).ready(function(){
         var datastr = "address=" + address;
         $.ajax({
             type: "get",
-            url: "http://localhost:3010/weather",
+            url: "/weather",
             data: datastr,
             cache: false,
             success: function (data) {
