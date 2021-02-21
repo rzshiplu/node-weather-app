@@ -6,6 +6,7 @@ $(document).ready(function(){
         $("#result_forecast").html('');
         $("#result_location").html('');
         $("#result_latlong").html('');
+        $("#search_result").show();
 
         var address = $.trim( $("#search_location").val() );
 

@@ -25,15 +25,16 @@
             </form>
         </div>
 
-        <div id="search_result">
+        <div id="search_result" class="ui segment" style="display: none;">
             <p id="result_error"></p>
             <p id="result">
-                <div id="result_forecast"></div>
                 <div id="result_location"></div>
+                <div id="result_forecast"></div>
                 <div id="result_latlong"></div>
             </p>
         </div>
     </div>
+    {{>footer}}
     <script src="/js/app.js"></script>
 </body>
 </html>
