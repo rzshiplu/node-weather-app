@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home{{>pageTitle}}</title>
+
+    {{>upperLinks}}
+    <script src="/js/jquery-3.5.1.js"></script>
+</head>
+<body>
+    <div class="ui container">
+        {{>header}}
+        <h1>Weather</h1>
+
+        <div>
+            <form class="ui form" id="search_form">
+                <div class="ten wide column field">
+                    <div class="ui action input">
+                        <input type="text" id="search_location" placeholder="Location">
+                        <button class="ui secondary button">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="search_result">
+            <p id="result_error"></p>
+            <p id="result">
+                <div id="result_forecast"></div>
+                <div id="result_location"></div>
+                <div id="result_latlong"></div>
+            </p>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
