@@ -8,7 +8,7 @@ const weatherReport = require('./utils/weatherReport');
 const app = express();
 
 // set port
-const port = process.env.port || 3010;
+const port = process.env.PORT || 3010;
 
 // set static Path
 const publicPath = path.join(__dirname, '../public');
